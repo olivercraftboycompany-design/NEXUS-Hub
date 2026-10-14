@@ -263,7 +263,7 @@ function rBibley(b) {
   if (b.plan) {
     h += `<div class="sec">${esc(b.plan.ico)} ${esc(b.plan.name)}</div><div class="bar2" role="progressbar" aria-valuenow="${b.plan.pct}" aria-valuemin="0" aria-valuemax="100"><i style="width:${b.plan.pct}%"></i></div>`;
     h += row(b.plan.finished ? 'Plan complete 🎉' : `Day ${b.plan.day} of ${b.plan.total}`, `${b.plan.pct}% · ${b.plan.doneCount} days done`);
-    if (!b.plan.finished) h += row(b.plan.doneToday ? 'Today ✓' : 'Today', esc(b.plan.today));
+    if (!b.plan.finished) h += row(b.plan.doneToday ? 'Up next · today ✓' : 'Today\'s reading', esc(b.plan.today));
   } else h += row('Reading plan', 'none yet · tap Plans');
   h += row('🔥 Streak', b.streak ? `${b.streak} day${b.streak === 1 ? '' : 's'}${b.streakToday ? '' : ' · read today to keep it'}` : 'start one today');
   h += row('Chapters read', fmtNum(b.chapters));
