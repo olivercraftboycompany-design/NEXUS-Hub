@@ -1,1 +1,45 @@
-LyogTkVYVVMgSHViIHNlcnZpY2Ugd29ya2VyOiBhcHAgc2hlbGwgb2ZmbGluZSArIGFwcCBpY29ucy4gTGl2ZSBkYXRhICh3ZWF0aGVyLCBoZWFkbGluZXMpIGlzIGZldGNoZWQgYnkKICAgdGhlIHBhZ2UgYW5kIGl0cyBsYXN0IGNvcHkga2VwdCBpbiB0aGUgcGFnZSdzIG93biBzdG9yYWdlLCBzbyBvZmZsaW5lIHNob3dzIHRoZSBsYXN0IHN0YXRzLiAqLwpjb25zdCBWRVJTSU9OID0gJ254aHViLXY0JzsKY29uc3QgU0hFTEwgPSBbJy4vJywgJy4vaW5kZXguaHRtbCcsICcuL3N0eWxlLmNzcycsICcuL2NvbnRyb2xzLmpzJywgJy4vYXBwLmpzJywgJy4vbWFuaWZlc3QuanNvbicsCiAgJy4vaWNvbnMvaWNvbi0xOTIucG5nJywgJy4vaWNvbnMvaWNvbi01MTIucG5nJywgJy4vaWNvbnMvbWFza2FibGUtNTEyLnBuZycsICcuL2ljb25zL2Zhdmljb24tMzIucG5nJywgJy4vaWNvbnMvYXBwbGUtdG91Y2gtaWNvbi5wbmcnXTsKY29uc3QgQVBQX0lDT05TID0gWycvQmlibGV5LS9pY29ucy9pY29uLTE5Mi5wbmcnLCAnLzN0YndnL2ljb25zL2ljb24tMTkyLnBuZycsICcvTkVYVVMtQ2FsZW5kYXIvaWNvbnMvaWNvbi0xOTIucG5nJywKICAnL05FWFVTLU5ld3MvaWNvbnMvaWNvbi0xOTIucG5nJywgJy9VbHRpbWF0ZS1XZWF0aGVyL2ljb25zL2ljb24tMTkyLnBuZycsICcvQXBvbG9nZXRpY3MxMDEvaWNvbnMvaWNvbi0xOTIucG5nJ107CgpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2luc3RhbGwnLCBlID0+IHsKICBlLndhaXRVbnRpbCgoYXN5bmMgKCkgPT4gewogICAgY29uc3QgYyA9IGF3YWl0IGNhY2hlcy5vcGVuKFZFUlNJT04pOwogICAgYXdhaXQgYy5hZGRBbGwoU0hFTEwubWFwKHUgPT4gbmV3IFJlcXVlc3QodSwgeyBjYWNoZTogJ3JlbG9hZCcgfSkpKTsKICAgIC8vIE90aGVyIGFwcHMnIGljb25zOiBiZXN0IGVmZm9ydCwgb25lIG1pc3NpbmcgaWNvbiBtdXN0IG5vdCBibG9jayBpbnN0YWxsLgogICAgYXdhaXQgUHJvbWlzZS5hbGwoQVBQX0lDT05TLm1hcCh1ID0+IGZldGNoKHUsIHsgY2FjaGU6ICdyZWxvYWQnIH0pLnRoZW4ociA9PiByLm9rICYmIGMucHV0KHUsIHIpKS5jYXRjaCgoKSA9PiB7fSkpKTsKICAgIGF3YWl0IHNlbGYuc2tpcFdhaXRpbmcoKTsKICB9KSgpKTsKfSk7CnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignYWN0aXZhdGUnLCBlID0+IHsKICBlLndhaXRVbnRpbCgoYXN5bmMgKCkgPT4gewogICAgZm9yIChjb25zdCBrIG9mIGF3YWl0IGNhY2hlcy5rZXlzKCkpIGlmIChrLnN0YXJ0c1dpdGgoJ254aHViLScpICYmIGsgIT09IFZFUlNJT04pIGF3YWl0IGNhY2hlcy5kZWxldGUoayk7CiAgICBhd2FpdCBzZWxmLmNsaWVudHMuY2xhaW0oKTsKICB9KSgpKTsKfSk7CnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignZmV0Y2gnLCBlID0+IHsKICBjb25zdCByZXEgPSBlLnJlcXVlc3Q7CiAgaWYgKHJlcS5tZXRob2QgIT09ICdHRVQnKSByZXR1cm47CiAgY29uc3QgdXJsID0gbmV3IFVSTChyZXEudXJsKTsKICBpZiAodXJsLm9yaWdpbiAhPT0gbG9jYXRpb24ub3JpZ2luKSByZXR1cm47IC8vIHdlYXRoZXIgKyBuZXdzIEFQSXMgZ28gc3RyYWlnaHQgdG8gdGhlIG5ldHdvcmsKICBjb25zdCBzY29wZSA9IG5ldyBVUkwoc2VsZi5yZWdpc3RyYXRpb24uc2NvcGUpLnBhdGhuYW1lOwogIGlmIChyZXEubW9kZSA9PT0gJ25hdmlnYXRlJykgewogICAgaWYgKCF1cmwucGF0aG5hbWUuc3RhcnRzV2l0aChzY29wZSkpIHJldHVybjsKICAgIC8vIG5ldHdvcmsgZmlyc3Qgc28gdXBkYXRlcyBzaG93IHVwOyBmYWxsIGJhY2sgdG8gdGhlIGNhY2hlZCBzaGVsbCBvZmZsaW5lCiAgICBlLnJlc3BvbmRXaXRoKGZldGNoKHJlcSkudGhlbihyID0+IHsgaWYgKHIub2spIHsgY29uc3QgY3AgPSByLmNsb25lKCk7IGNhY2hlcy5vcGVuKFZFUlNJT04pLnRoZW4oYyA9PiBjLnB1dCgnLi9pbmRleC5odG1sJywgY3ApKTsgfSByZXR1cm4gcjsgfSkKICAgICAgLmNhdGNoKGFzeW5jICgpID0+IChhd2FpdCBjYWNoZXMubWF0Y2goJy4vaW5kZXguaHRtbCcpKSB8fCAoYXdhaXQgY2FjaGVzLm1hdGNoKCcuLycpKSB8fCBSZXNwb25zZS5lcnJvcigpKSk7CiAgICByZXR1cm47CiAgfQogIGNvbnN0IGlzSWNvbiA9IEFQUF9JQ09OUy5pbmNsdWRlcyh1cmwucGF0aG5hbWUpOwogIGlmICghdXJsLnBhdGhuYW1lLnN0YXJ0c1dpdGgoc2NvcGUpICYmICFpc0ljb24pIHJldHVybjsKICAvLyBzdGFsZS13aGlsZS1yZXZhbGlkYXRlIGZvciB0aGUgc2hlbGwgYW5kIGljb25zCiAgZS5yZXNwb25kV2l0aChjYWNoZXMub3BlbihWRVJTSU9OKS50aGVuKGFzeW5jIGMgPT4gewogICAgY29uc3QgaGl0ID0gYXdhaXQgYy5tYXRjaChpc0ljb24gPyB1cmwucGF0aG5hbWUgOiByZXEsIHsgaWdub3JlU2VhcmNoOiB0cnVlIH0pOwogICAgY29uc3QgbmV0ID0gZmV0Y2gocmVxKS50aGVuKHIgPT4geyBpZiAoci5vaykgYy5wdXQoaXNJY29uID8gdXJsLnBhdGhuYW1lIDogcmVxLCByLmNsb25lKCkpOyByZXR1cm4gcjsgfSkuY2F0Y2goKCkgPT4gbnVsbCk7CiAgICByZXR1cm4gaGl0IHx8IChhd2FpdCBuZXQpIHx8IFJlc3BvbnNlLmVycm9yKCk7CiAgfSkpOwp9KTsK
+/* NEXUS Hub service worker: app shell offline + app icons. Live data (weather, headlines) is fetched by
+   the page and its last copy kept in the page's own storage, so offline shows the last stats. */
+const VERSION = 'nxhub-v4';
+const SHELL = ['./', './index.html', './style.css', './controls.js', './app.js', './manifest.json',
+  './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png', './icons/favicon-32.png', './icons/apple-touch-icon.png'];
+const APP_ICONS = ['/Bibley-/icons/icon-192.png', '/3tbwg/icons/icon-192.png', '/NEXUS-Calendar/icons/icon-192.png',
+  '/NEXUS-News/icons/icon-192.png', '/Ultimate-Weather/icons/icon-192.png', '/Apologetics101/icons/icon-192.png'];
+
+self.addEventListener('install', e => {
+  e.waitUntil((async () => {
+    const c = await caches.open(VERSION);
+    await c.addAll(SHELL.map(u => new Request(u, { cache: 'reload' })));
+    // Other apps' icons: best effort, one missing icon must not block install.
+    await Promise.all(APP_ICONS.map(u => fetch(u, { cache: 'reload' }).then(r => r.ok && c.put(u, r)).catch(() => {})));
+    await self.skipWaiting();
+  })());
+});
+self.addEventListener('activate', e => {
+  e.waitUntil((async () => {
+    for (const k of await caches.keys()) if (k.startsWith('nxhub-') && k !== VERSION) await caches.delete(k);
+    await self.clients.claim();
+  })());
+});
+self.addEventListener('fetch', e => {
+  const req = e.request;
+  if (req.method !== 'GET') return;
+  const url = new URL(req.url);
+  if (url.origin !== location.origin) return; // weather + news APIs go straight to the network
+  const scope = new URL(self.registration.scope).pathname;
+  if (req.mode === 'navigate') {
+    if (!url.pathname.startsWith(scope)) return;
+    // network first so updates show up; fall back to the cached shell offline
+    e.respondWith(fetch(req).then(r => { if (r.ok) { const cp = r.clone(); caches.open(VERSION).then(c => c.put('./index.html', cp)); } return r; })
+      .catch(async () => (await caches.match('./index.html')) || (await caches.match('./')) || Response.error()));
+    return;
+  }
+  const isIcon = APP_ICONS.includes(url.pathname);
+  if (!url.pathname.startsWith(scope) && !isIcon) return;
+  // stale-while-revalidate for the shell and icons
+  e.respondWith(caches.open(VERSION).then(async c => {
+    const hit = await c.match(isIcon ? url.pathname : req, { ignoreSearch: true });
+    const net = fetch(req).then(r => { if (r.ok) c.put(isIcon ? url.pathname : req, r.clone()); return r; }).catch(() => null);
+    return hit || (await net) || Response.error();
+  }));
+});
