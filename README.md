@@ -1,1 +1,27 @@
-IyBORVhVUyBIdWIKCk9uZSBkYXNoYm9hcmQgZm9yIGFsbCBvZiBPbGl2ZXIncyBORVhVUyBhcHBzOiBCaWJsZXksIG5vcnRlc3QsIE5FWFVTIENhbGVuZGFyLCBORVhVUyBOZXdzLCBVbHRpbWF0ZSBXZWF0aGVyIGFuZCBBcG9sb2dldGljczEwMS4gSXQgc2hvd3Mgc3RhdHMgYW5kIGNvbnRyb2xzIGVhY2ggYXBwLgoKTGl2ZTogaHR0cHM6Ly9vbGl2ZXJjcmFmdGJveWNvbXBhbnktZGVzaWduLmdpdGh1Yi5pby9ORVhVUy1IdWIvCgpBbGwgdGhlIGFwcHMgc2hhcmUgb25lIHNpdGUgKG9saXZlcmNyYWZ0Ym95Y29tcGFueS1kZXNpZ24uZ2l0aHViLmlvKSwgc28gdGhlIEh1YiBjYW4gcmVhZCBhbmQgY2hhbmdlIHRoZWlyIHNhdmVkIGRhdGEgb24gdGhlIHNhbWUgcGhvbmUvYnJvd3Nlci4KCiMjIENvbnRyb2xzIChjb250cm9scy5qcykKLSAqKm5vcnRlc3QqKjogYSByZW1vdGUgdGhhdCB1c2VzIHRoZSBwbGF5ZXIncyBvd24gdGV4dCByZW1vdGUgKG50ZnkgdG9waWMgYG5vcnRlc3QtNzAxM2Q4YjQyNGEyMWQ3OGA7IHN0YXR1cyByZXBsaWVzIGNvbWUgb24gYC1zdGF0dXNgKS4gUGxheS9wYXVzZSwgcHJldi9uZXh0LCB2b2x1bWUsIHNodWZmbGUgYW5kIHJlcGVhdC4gV29ya3Mgd2l0aCB0aGUgcGxheWVyIG9wZW4gb24gYW55IGRldmljZS4KLSAqKkNhbGVuZGFyKio6IHF1aWNrLWFkZCBhbiBldmVudCBvciBob21ld29yayBpbnRvIGBueGNhbF92MWAgKHRoZSBhcHAncyBvd24gZXZlbnQgc2hhcGUpLCBhbmQgdGljayBob21ld29yayBkb25lL3VuZG9uZSAoYGRvbmVbIjxpZD5APGRhdGU+Il1gKS4gQW4gb3BlbiBDYWxlbmRhciB0YWIgdXBkYXRlcyBsaXZlIHRocm91Z2ggdGhlIHN0b3JhZ2UgZXZlbnQuCi0gKipCaWJsZXkqKjogIk1hcmsgRGF5IE4gcmVhZCIgZG9lcyB0aGUgc2FtZSB0aGluZyBhcyBCaWJsZXkncyBvd24gTWFyayByZWFkOiBpdCB1cGRhdGVzIGBiaWJsZXlfcGxhbl92MWAsIGBiaWJsZXlfcmVhZF92MWAgYW5kIGBiaWJsZXlfYWN0aXZpdHlfdjFgLiBUaGVyZSdzIGFsc28gQ29udGludWUgcmVhZGluZyAoYCNjb250aW51ZWApIGFuZCBWZXJzZSBvZiB0aGUgRGF5IENvcHkvU2hhcmUuCi0gKipOZXdzKio6IGEgY2F0ZWdvcnkgcGlja2VyIGZvciB0aGUgaGVhZGxpbmVzIChIdWItb25seSBzZXR0aW5nKSBhbmQgdW4tc2F2ZSBhIHN0b3J5IChgbnhuZXdzX3NhdmVkX3YxYCkuCi0gKipXZWF0aGVyKio6IHN3aXRjaCBjaXR5IChgbnhfbGFzdGAsIHVzaW5nIHRoZSBzYW1lIGxvb2t1cHMgYXMgdGhlIGFwcCksIHBpY2sgb25lIG9mIHRoZSBhcHAncyBzYXZlZCBzcG90cywgYW5kIMKwRi/CsEMgKGBueF91bml0YCkuIEFsZXJ0cyBhbmQgbGl2ZSB1cGRhdGVzIGRlZXAtbGluayB0byB0aGUgYXBwJ3MgYCNub3RpZnlgLgotICoqQXBvbG9nZXRpY3MxMDEqKjogQ29udGludWUgcmVhZGluZyBwbHVzIGxpbmtzIHRvIGVhY2ggYXJ0aWNsZSwgQW5zd2VycyBhbmQgUXVpei4KCiMjIFNhZmV0eQotIEJlZm9yZSB0aGUgZmlyc3QgY2hhbmdlIHRvIGFuIGFwcCAocGVyIEh1YiBzZXNzaW9uKSBhbmQgYmVmb3JlIGFueSByZXN0b3JlLCBhIHNuYXBzaG90IGdvZXMgaW50byB0aGUgSHViJ3Mgb3duIEluZGV4ZWREQiBgbnhodWJgIOKGkiBgbnhodWJfc25hcHNob3RzYCAodGhlIGxhc3QgNSBwZXIgYXBwKS4gVG8gdXNlIG9uZTog4pqZ77iPIOKGkiBSZXN0b3JlIGEgc25hcHNob3QuCi0gRXZlcnkgY2hhbmdlIGhhcyBVbmRvLgotIFB1c2ggc3Vic2NyaXB0aW9ucyAoYG54Y2FsX3B1c2hgLCBgbnhfcHVzaGApIGFyZSBuZXZlciBjb3BpZWQgb3IgY2hhbmdlZC4gSW5kZXhlZERCIHZlcnNpb25zIGFyZSBuZXZlciBidW1wZWQsIGFuZCB0aGUgSHViIG5ldmVyIGNyZWF0ZXMgdGhlIGBub3J0ZXN0YCBkYXRhYmFzZS4KCiMjIEh1Yi13aWRlCi0gUXVpY2sgYWN0aW9uczogTXVzaWMsICsgRXZlbnQsIOKckyBSZWFkaW5nLCBCYWNrdXAuCi0g4pqZ77iPIOKGkiBDYXJkczogcmVvcmRlciBhbmQgaGlkZSBjYXJkcyAoYG54aHViX2xheW91dGApLgotIOKame+4jyDihpIgQmFjayB1cCBldmVyeXRoaW5nOiBvbmUgSlNPTiBmaWxlIHdpdGggZXZlcnkgYXBwJ3Mgc2F2ZWQgZGF0YSwgcGx1cyBub3J0ZXN0J3MgbGlicmFyeSBsaXN0LCBwbGF5bGlzdHMgYW5kIHNldHRpbmdzIChubyBhdWRpbykuIFJlc3RvcmUgZnJvbSBmaWxlIHNob3dzIGEgcHJldmlldyBmaXJzdC4gRm9yIG5vcnRlc3QsIGEgcmVzdG9yZSBicmluZ3MgYmFjayBzZXR0aW5ncywgcGxheSBjb3VudHMgYW5kIHBsYXlsaXN0cyAodXNpbmcgb25seSB0aGUgc29uZ3MgYWxyZWFkeSBvbiB0aGUgcGhvbmUpLgoKVGhlIEh1YidzIG93biBrZXlzIHN0YXJ0IHdpdGggYG54aHViX2AuCg==
+# NEXUS Hub
+
+One dashboard for all of Oliver's NEXUS apps: Bibley, nortest, NEXUS Calendar, NEXUS News, Ultimate Weather and Apologetics101. It shows stats and controls each app.
+
+Live: https://olivercraftboycompany-design.github.io/NEXUS-Hub/
+
+All the apps share one site (olivercraftboycompany-design.github.io), so the Hub can read and change their saved data on the same phone/browser.
+
+## Controls (controls.js)
+- **nortest**: a remote that uses the player's own text remote (ntfy topic `nortest-7013d8b424a21d78`; status replies come on `-status`). Play/pause, prev/next, volume, shuffle and repeat. Works with the player open on any device.
+- **Calendar**: quick-add an event or homework into `nxcal_v1` (the app's own event shape), and tick homework done/undone (`done["<id>@<date>"]`). An open Calendar tab updates live through the storage event.
+- **Bibley**: "Mark Day N read" does the same thing as Bibley's own Mark read: it updates `bibley_plan_v1`, `bibley_read_v1` and `bibley_activity_v1`. There's also Continue reading (`#continue`) and Verse of the Day Copy/Share.
+- **News**: a category picker for the headlines (Hub-only setting) and un-save a story (`nxnews_saved_v1`).
+- **Weather**: switch city (`nx_last`, using the same lookups as the app), pick one of the app's saved spots, and °F/°C (`nx_unit`). Alerts and live updates deep-link to the app's `#notify`.
+- **Apologetics101**: Continue reading plus links to each article, Answers and Quiz.
+
+## Safety
+- Before the first change to an app (per Hub session) and before any restore, a snapshot goes into the Hub's own IndexedDB `nxhub` → `nxhub_snapshots` (the last 5 per app). To use one: ⚙️ → Restore a snapshot.
+- Every change has Undo.
+- Push subscriptions (`nxcal_push`, `nx_push`) are never copied or changed. IndexedDB versions are never bumped, and the Hub never creates the `nortest` database.
+
+## Hub-wide
+- Quick actions: Music, + Event, ✓ Reading, Backup.
+- ⚙️ → Cards: reorder and hide cards (`nxhub_layout`).
+- ⚙️ → Back up everything: one JSON file with every app's saved data, plus nortest's library list, playlists and settings (no audio). Restore from file shows a preview first. For nortest, a restore brings back settings, play counts and playlists (using only the songs already on the phone).
+
+The Hub's own keys start with `nxhub_`.
