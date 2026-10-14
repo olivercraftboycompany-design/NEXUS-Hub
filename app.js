@@ -352,9 +352,12 @@ async function refresh(manual) {
   $('#cards').innerHTML = ORDER.map(k => { try { return R[k](S[k] || { used: false }); } catch (e) { console.warn('hub render', k, e && e.message); return card(k, '', empty(k)); } }).join('');
   rSummary(S);
   window.__hub = S;
-  const live = (S.weather && S.weather.cur && S.weather.cur.live) || (S.news && S.news.live);
-  $('#dot').className = 'dot' + (online && live ? '' : ' stale');
-  $('#updated').textContent = online ? (live ? 'Updated just now' : 'Updated · some live info couldn\'t load') : 'Offline · showing saved stats';
+  const wxLive = !!(S.weather && S.weather.cur && S.weather.cur.live), newsLive = !!(S.news && S.news.live);
+  const reach = online && (wxLive || newsLive); // both live reads failing = no internet, whatever navigator.onLine says
+  $('#offline').hidden = reach;
+  $('#dot').className = 'dot' + (reach && wxLive && newsLive ? '' : ' stale');
+  const t = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+  $('#updated').textContent = !reach ? 'Offline · showing your last stats' : (wxLive && newsLive ? 'Updated ' + t : 'Updated ' + t + ' · ' + (wxLive ? 'headlines' : 'weather') + ' couldn\'t load');
   hubSet('last', Date.now());
   document.body.classList.remove('spinning');
   busy = false;
