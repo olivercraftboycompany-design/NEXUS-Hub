@@ -13,9 +13,10 @@ const APPS = {
   calendar:{ name: 'NEXUS Calendar', path: '/NEXUS-Calendar/', icon: '/NEXUS-Calendar/icons/icon-192.png', accent: '#3b82f6', open: '/NEXUS-Calendar/#today' },
   news:    { name: 'NEXUS News', path: '/NEXUS-News/', icon: '/NEXUS-News/icons/icon-192.png', accent: '#ef4444', open: '/NEXUS-News/?tab=top' },
   weather: { name: 'Ultimate Weather', path: '/Ultimate-Weather/', icon: '/Ultimate-Weather/icons/icon-192.png', accent: '#06b6d4', open: '/Ultimate-Weather/' },
-  apol:    { name: 'Apologetics101', path: '/Apologetics101/', icon: '/Apologetics101/icons/icon-192.png', accent: '#8b5cf6', open: '/Apologetics101/?source=hub#/continue' }
+  apol:    { name: 'Apologetics101', path: '/Apologetics101/', icon: '/Apologetics101/icons/icon-192.png', accent: '#8b5cf6', open: '/Apologetics101/?source=hub#/continue' },
+  alarm:   { name: 'NEXUS Alarm', path: '/NEXUS-Alarm/', icon: '/NEXUS-Alarm/icons/icon-192.png', accent: '#60a5fa', open: '/NEXUS-Alarm/' }
 };
-const ORDER = ['bibley', 'nortest', 'calendar', 'news', 'weather', 'apol'];
+const ORDER = ['bibley', 'nortest', 'calendar', 'news', 'weather', 'apol', 'alarm'];
 
 // Home-screen shortcuts open ./?open=<app>: jump straight into that app.
 const want = new URLSearchParams(location.search).get('open');
@@ -384,7 +385,30 @@ function rSummary(S) {
 }
 function greet() { const h = new Date().getHours(); $('#greet').textContent = (h < 5 ? 'Up late, Oliver 🌙' : h < 12 ? 'Good morning, Oliver ☀️' : h < 17 ? 'Good afternoon, Oliver 👋' : 'Good evening, Oliver 🌆'); }
 
-const R = { bibley: rBibley, nortest: rNortest, calendar: rCalendar, news: rNews, weather: rWeather, apol: rApol };
+
+/* NEXUS Alarm card (read-only: reads nxalarm_alarms / nxalarm_reminders) */
+function alarmData() {
+  const rd = k => { try { return JSON.parse(localStorage.getItem('nxalarm_' + k) || 'null'); } catch (e) { return null; } };
+  const al = rd('alarms'), rem = rd('reminders');
+  if (!Array.isArray(al) && !Array.isArray(rem)) return { used: false };
+  const now = Date.now();
+  const on = (al || []).filter(a => a && (a.enabled || a.snoozeAt));
+  let next = null;
+  on.forEach(a => { const t = a.snoozeAt || (a.enabled ? a.armedAt : 0); if (t && t > now - 60000 && (!next || t < next.t)) next = { t, label: a.label || 'Alarm' }; });
+  const up = (rem || []).filter(r => r && !r.done).sort((a, b) => a.at - b.at);
+  return { used: true, total: (al || []).length, on: on.length, next, rems: up.length, rem: up[0] || null };
+}
+function rAlarm(a) {
+  const hm = t => { const d = new Date(t); return ((d.getHours() % 12) || 12) + ':' + pad(d.getMinutes()) + ' ' + (d.getHours() < 12 ? 'AM' : 'PM'); };
+  const inStr = t => { let m = Math.max(0, Math.ceil((t - Date.now()) / 60000)); const h = Math.floor(m / 60); m %= 60; return h ? h + 'h ' + m + 'm' : m + ' min'; };
+  const ctl = `<div class="ctl"><a class="cbtn pri" href="/NEXUS-Alarm/?new=alarm">+ New alarm</a><a class="cbtn" href="/NEXUS-Alarm/#reminders">Reminders</a></div>`;
+  if (!a.used) return card('alarm', 'Alarms &amp; reminders', empty('alarm') + ctl);
+  let h = `<div class="stats">${stat(a.on, 'alarms on')}${stat(a.total, 'alarms')}${stat(a.rems, 'reminders')}</div>`;
+  h += row('Next alarm', a.next ? esc(hm(a.next.t)) + ' &middot; in ' + esc(inStr(a.next.t)) + ' &middot; ' + esc(a.next.label) : 'none on');
+  h += row('Next reminder', a.rem ? esc(a.rem.note || 'Reminder') + ' &middot; ' + esc(hm(a.rem.at)) : 'nothing coming up');
+  return card('alarm', a.next ? 'Alarm in ' + esc(inStr(a.next.t)) : 'Alarms &amp; reminders', h + ctl);
+}
+const R = { bibley: rBibley, nortest: rNortest, calendar: rCalendar, news: rNews, weather: rWeather, apol: rApol, alarm: rAlarm };
 // Card manager: order + hidden cards, saved in nxhub_layout.
 function layout() {
   const L = hubGet('layout', null) || {};
@@ -403,7 +427,7 @@ async function refresh(manual) {
   const safe = async (k, f) => { try { S[k] = await f(); } catch (e) { console.warn('hub:', k, e && e.message); S[k] = { used: false }; } };
   await Promise.all([
     safe('bibley', bibley), safe('nortest', nortest), safe('calendar', calendar),
-    safe('news', () => news(online)), safe('weather', () => weather(online)), safe('apol', apol)
+    safe('news', () => news(online)), safe('weather', () => weather(online)), safe('apol', apol), safe('alarm', alarmData)
   ]);
   const LY = layout(), shown = LY.order.filter(k => !LY.hidden.includes(k));
   $('#cards').innerHTML = shown.map(k => { try { return R[k](S[k] || { used: false }); } catch (e) { console.warn('hub render', k, e && e.message); return card(k, '', empty(k)); } }).join('')
