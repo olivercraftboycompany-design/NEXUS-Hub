@@ -1,6 +1,6 @@
 /* NEXUS Hub service worker: app shell offline + app icons. Live data (weather, headlines) is fetched by
    the page and its last copy kept in the page's own storage, so offline shows the last stats. */
-const VERSION = 'nxhub-v5';
+const VERSION = 'nxhub-v6';
 const SHELL = ['./', './index.html', './style.css', './controls.js', './app.js', './manifest.json',
   './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png', './icons/favicon-32.png', './icons/apple-touch-icon.png'];
 const APP_ICONS = ['/Bibley-/icons/icon-192.png', '/3tbwg/icons/icon-192.png', '/NEXUS-Calendar/icons/icon-192.png',
